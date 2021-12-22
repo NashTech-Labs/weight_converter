@@ -11,4 +11,9 @@ mod test {
     fn check_convert_weight() {
         assert_eq!(convert_weight("100.0".to_string()),"100.0".to_string());
     }
+
+    #[test]
+    fn check_input_parsing_fails() {
+        assert_eq!(convert_weight(" ".to_string()),"cannot parse float from empty string".to_string());
+    }
 }

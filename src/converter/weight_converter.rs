@@ -16,6 +16,6 @@ pub fn convert_weight () {
     }
 }
 
-fn calculate_weight_on_mars(weight_on_earth:f32) -> f32{
+pub fn calculate_weight_on_mars(weight_on_earth:f32) -> f32{
     (weight_on_earth / 9.81) * 3.711
 }
